@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <style>
+      .image1 {
+        position: absolute;
+        top: 95px;
+        left: 445px;
+        border: 1px solid #000000;
+        z-index: 1;
+      }
+      .image12 {
+        position: absolute;
+        top: 165px;
+        left: 235px;
+        border: 1px solid #000000;
+        z-index: 1;
+      }
+
+      .image2 {
+        position: absolute;
+        top:345px;
+        left: 245px;
+        border: 1px solid #000000;
+        z-index: 2;
+      }
+      .image3 {
+        position: absolute;
+        top:125px;
+        left: 605px;
+        border: 1px solid #000000;
+        z-index: 2;
+      }
+      .image4 {
+        position: absolute;
+        top:64px;
+        left: 185px;
+        border: 1px solid #000000;
+        z-index: 2;
+      }
+      .image5 {
+        position: absolute;
+        top:16px;
+        left: 680px;
+        border: 1px solid #000000;
+        z-index: 2;
+      }
+      .image6 {
+        position: absolute;
+        top:235px;
+        left: 71px;
+        border: 1px solid #000000;
+        z-index: 2;
+      }
+    </style>
+
+  </head>
+
+  <body>
+
+  	<script language="javascript" type="text/javascript">
+    function chngimg() {
+        var img = document.getElementById('img2').src;
+        if (img.indexOf('B283pls.png')!=-1) {
+            document.getElementById('img2').src  = 'https://imgur.com/zxOd58Q.png';
+            document.getElementById('img3').src  = 'https://imgur.com/HZXBpuD.png';
+            document.getElementById('img4').src  = 'https://imgur.com/b3fkRJX.png';
+            document.getElementById('img5').src  = 'https://imgur.com/R8UrpW9.png';
+            document.getElementById('img6').src  = 'https://imgur.com/G9tYDDJ.png';
+        }
+         else {
+           document.getElementById('img2').src = 'https://imgur.com/B283pls.png';
+           document.getElementById('img3').src  = 'https://imgur.com/Fqfk5zC.png';
+           document.getElementById('img4').src  = 'https://imgur.com/b3fkRJX.png';
+           document.getElementById('img5').src  = 'https://imgur.com/FhaYtIv.png';
+           document.getElementById('img6').src  = 'https://imgur.com/TuA1TvF.png';
+       }
+    }
+	</script>
+
+    <img class="image1" id = "img1" height = 500px  src="https://imgur.com/EDP53Wn.png" />
+    <img class="image12" id = "img12" height = 300px src="https://imgur.com/TA6Eg6g.png" />
+    <img class="image2" id = "img2" height = 45px src="https://imgur.com/B283pls.png" onmouseover="this.style.cursor='pointer';" onclick="chngimg();" />
+    <img class="image3" id = "img3" height = 40px src="https://imgur.com/Fqfk5zC.png" />
+    <img class="image4" id = "img4" height = 100px src="https://imgur.com/b3fkRJX.png" />
+    <img class="image5" id = "img5" height = 100px src="https://imgur.com/FhaYtIv.png" />
+    <img class="image6" id = "img6" height = 150px src="https://imgur.com/TuA1TvF.png" />
+    <!--https://imgur.com/xBMKkO1
+    https://imgur.com/R8UrpW9 -->
+
+  </body>
+</html>

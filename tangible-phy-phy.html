@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <style>
+      .image1 {
+        position: absolute;
+        top: 85px;
+        left: 85px;
+        border: 1px solid #000000;
+        z-index: 1;
+      }
+      .image2 {
+        position: absolute;
+        top:115px;
+        left: 195px;
+        border: 1px solid #000000;
+        z-index: 2;
+      }
+      .image3 {
+        position: absolute;
+        top:110px;
+        left: 400px;
+        border: 1px solid #000000;
+        z-index: 2;
+      }
+      .image4 {
+        position: absolute;
+        top:8px;
+        left: 115px;
+        border: 1px solid #000000;
+        z-index: 2;
+      }
+      .image5 {
+        position: absolute;
+        top:5px;
+        left: 500px;
+        border: 1px solid #000000;
+        z-index: 2;
+      }
+    </style>
+
+  </head>
+
+  <body>
+
+  	<script language="javascript" type="text/javascript">
+    function chngimg() {
+        var img = document.getElementById('img2').src;
+        if (img.indexOf('LvWiCaH.png')!=-1) {
+            document.getElementById('img2').src  = 'https://imgur.com/Ir7SP6X.png';
+            document.getElementById('img3').src  = 'https://imgur.com/HZXBpuD.png';
+            document.getElementById('img4').src  = 'https://imgur.com/zufeBLC.png';
+            document.getElementById('img5').src  = 'https://imgur.com/R8UrpW9.png';
+        }
+         else {
+           document.getElementById('img2').src = 'https://imgur.com/LvWiCaH.png';
+           document.getElementById('img3').src  = 'https://imgur.com/Fqfk5zC.png';
+           document.getElementById('img4').src  = 'https://imgur.com/cLW8W1d.png';
+           document.getElementById('img5').src  = 'https://imgur.com/FhaYtIv.png';
+       }
+    }
+	</script>
+
+    <img class="image1" id = "img1" height = 500px  src="https://imgur.com/EDP53Wn.png" />
+    <img class="image2" id = "img2" height = 40px src="https://imgur.com/LvWiCaH.png" onmouseover="this.style.cursor='pointer';" onclick="chngimg();" />
+    <img class="image3" id = "img3" height = 45px src="https://imgur.com/Fqfk5zC.png" />
+    <img class="image4" id = "img4" height = 100px src="https://imgur.com/cLW8W1d.png" />
+    <img class="image5" id = "img5" height = 100px src="https://imgur.com/FhaYtIv.png" />
+    <!--https://imgur.com/xBMKkO1
+    https://imgur.com/R8UrpW9 -->
+
+  </body>
+</html>
