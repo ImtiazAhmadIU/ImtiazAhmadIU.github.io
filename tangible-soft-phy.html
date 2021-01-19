@@ -5,53 +5,53 @@
     <style>
       .image1 {
         position: absolute;
-        top: 95px;
-        left: 305px;
+        top: 140px;
+        left: 285px;
        /*border: 1px solid #000000;*/
         z-index: 1;
       }
       .image12 {
         position: absolute;
         top: 165px;
-        left: 140px;
+        left: 127px;
         /*border: 1px solid #000000;*/
-        z-index: 2;
+        z-index: 0;
       }
 
       .image2 {
         position: absolute;
-        top:345px;
-        left: 153px;
+        top:326px;
+        left: 135px;
         /*border: 1px solid #000000;*/
         z-index: 2;
       }
       .image3 {
         position: absolute;
-        top:125px;
-        left: 435px;
+        top:157px;
+        left: 390px;
         /*border: 1px solid #000000;*/
         z-index: 2;
       }
       .image4 {
         position: absolute;
         top:74px;
-        left: 85px;
+        left: 125px;
         /*border: 1px solid #000000;*/
         z-index: 0;
       }
       .image5 {
         position: absolute;
-        top:16px;
-        left: 480px;
+        top:56px;
+        left: 400px;
         /*border: 1px solid #000000;*/
         z-index: 2;
       }
       .image6 {
         position: absolute;
-        top:238px;
-        left: -18px;
+        top:220px;
+        left: -8px;
         /*border: 1px solid #000000;*/
-        z-index: 2;
+        z-index: 1;
       }
     </style>
 
@@ -59,7 +59,7 @@
 
   <body>
 
-  	<script language="javascript" type="text/javascript">
+    <script language="javascript" type="text/javascript">
     function chngimg() {
         var img = document.getElementById('img2').src;
         if (img.indexOf('B283pls.png')!=-1) {
@@ -77,15 +77,16 @@
            document.getElementById('img6').src  = 'https://imgur.com/TuA1TvF.png';
        }
     }
-	</script>
+  </script>
 
-    <img class="image1" id = "img1"  src="https://imgur.com/w2Pop0j.png" />
-    <img class="image12" id = "img12" height = 300px src="https://imgur.com/TA6Eg6g.png" />
+    <!--<img class="image1" id = "img1" height = 500px  src="https://imgur.com/EDP53Wn.png" />-->
+    <img class="image1" id = "img1" width="430" height="340" src="https://imgur.com/w2Pop0j.png" /> 
+    <img class="image12" id = "img12" width="150" height = "280" src="https://imgur.com/TA6Eg6g.png" />
     <img class="image2" id = "img2" height = 45px src="https://imgur.com/B283pls.png" onmouseover="this.style.cursor='pointer';" onclick="chngimg();" />
-    <img class="image3" id = "img3" height = 40px src="https://imgur.com/Fqfk5zC.png" />
-    <img class="image4" id = "img4" height = 100px src="https://imgur.com/b3fkRJX.png" />
+    <img class="image3" id = "img3" width="121" height="30" src="https://imgur.com/Fqfk5zC.png" />
+    <img class="image4" id = "img4" width="180" height = 100px src="https://imgur.com/b3fkRJX.png" />
     <img class="image5" id = "img5" height = 100px src="https://imgur.com/FhaYtIv.png" />
-    <img class="image6" id = "img6" height = 150px  src="https://imgur.com/TuA1TvF.png" />
+    <img class="image6" id = "img6" width="140" height = 150px src="https://imgur.com/TuA1TvF.png" />
     <!--https://imgur.com/xBMKkO1
     https://imgur.com/R8UrpW9 -->
 
