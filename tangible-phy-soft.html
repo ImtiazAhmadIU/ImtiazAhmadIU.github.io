@@ -49,28 +49,30 @@
     <script language="javascript" type="text/javascript">
     function chngimg() {
         var img = document.getElementById('img2').src;
-        if (img.indexOf('LvWiCaH.png')!=-1) {
-            document.getElementById('img2').src  = 'https://imgur.com/Ir7SP6X.png';
-           document.getElementById('img12').src = 'https://imgur.com/iz3nolD.png';
-            document.getElementById('img4').src  = 'https://imgur.com/Bje1iN9.png';
-            document.getElementById('img5').src  = 'https://imgur.com/zufeBLC.png';
-        }
-         else {
+        if (img.indexOf('Ir7SP6X.png')!=-1) {
            document.getElementById('img2').src = 'https://imgur.com/LvWiCaH.png';
            document.getElementById('img12').src = 'https://imgur.com/Yi5BYsy.png';
            document.getElementById('img4').src  = 'https://imgur.com/FevgjRd.png';
            document.getElementById('img5').src  = 'https://imgur.com/cLW8W1d.png';
        }
+
+       else {
+            document.getElementById('img2').src  = 'https://imgur.com/Ir7SP6X.png';
+           document.getElementById('img12').src = 'https://imgur.com/iz3nolD.png';
+            document.getElementById('img4').src  = 'https://imgur.com/Bje1iN9.png';
+            document.getElementById('img5').src  = 'https://imgur.com/zufeBLC.png';
+        }
+         
     }
   </script>
 
     <!--<img class="image1" id = "img1" height = 500px  src="https://imgur.com/EDP53Wn.png" />-->
     <img class="image1" id = "img1" width="460" height="380" src="https://imgur.com/w2Pop0j.png" /> 
-    <img class="image12" id = "img12" width="140" height="260" src="https://imgur.com/Yi5BYsy.png" />
-    <img class="image2" id = "img2" width="70" height="33" src="https://imgur.com/LvWiCaH.png" onmouseover="this.style.cursor='pointer';" onclick="chngimg();" />
+    <img class="image12" id = "img12" width="140" height="260" src="https://imgur.com/iz3nolD.png" />
+    <img class="image2" id = "img2" width="70" height="33" src="https://imgur.com/Ir7SP6X.png" onmouseover="this.style.cursor='pointer';" onclick="chngimg();" />
 
-    <img class="image4" id = "img4" width="180" height = 150px src="https://imgur.com/FevgjRd.png" />
-    <img class="image5" id = "img5" width="200" height = 100px src="https://imgur.com/cLW8W1d.png" />
+    <img class="image4" id = "img4" width="180" height = 150px src="https://imgur.com/Bje1iN9.png" />
+    <img class="image5" id = "img5" width="200" height = 100px src="https://imgur.com/zufeBLC.png" />
     <!--https://imgur.com/xBMKkO1
     https://imgur.com/R8UrpW9 -->
 
